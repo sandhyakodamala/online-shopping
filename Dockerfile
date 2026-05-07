@@ -7,5 +7,5 @@ COPY . .
 FROM firststage as finalstage
 RUN npm install --production
 COPY . .
-CMD ["npm", "start"]
+CMD ["node", "index.js"]
 
